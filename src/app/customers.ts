@@ -1,31 +1,30 @@
 export class Customers {
-  [x: string]: string;
-    cName:string;
-cAccNum:string;
-cBalance:Number;
-cAcctype:string;
+  cName:string;
+  cAccNum:string;
+  cBalance:number;
+  cAcctype:string;
 constructor(name:string,accno:string,acctype:string){
 this.cName=name;
 this.cAccNum=accno;
 this.cBalance=0;
 this.cAcctype=acctype;
 }
-public getCname ():string {
+public getCname():string {
     return this.cName;
   }
-  public setCname (value: string) {
+  public setCname(value: string) {
     this.cName = value;
   }
-  public  getCaccno ():string {
+  public  getCaccno():string {
     return this.cAccNum;
   }
-  public setCaccno (value: string) {
+  public setCaccno(value: string) {
     this.cAccNum = value;
   }
   public getCbalance():number {
     return this.cBalance;
   }
-  public setCbalance (value: Number) {
+  public setCbalance(value: number) {
     this.cBalance = value;
   }
 }
